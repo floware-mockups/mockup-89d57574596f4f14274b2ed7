@@ -1,0 +1,390 @@
+{
+  "title": "Gestione prenotazioni sale riunioni",
+  "description": "Prototipo navigabile per consultare il calendario settimanale, verificare la disponibilità delle sale e registrare o aggiornare prenotazioni con dati di fantasia.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "panoramica",
+      "title": "Panoramica settimanale",
+      "description": "Riepilogo delle prenotazioni della settimana e degli spazi disponibili.",
+      "metrics": [
+        {
+          "label": "Prenotazioni in programma",
+          "value": "18"
+        },
+        {
+          "label": "Sale disponibili oggi",
+          "value": "3"
+        },
+        {
+          "label": "Ore prenotate questa settimana",
+          "value": "42"
+        },
+        {
+          "label": "Richieste da verificare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Giorno",
+        "Fascia oraria",
+        "Sala",
+        "Gruppo richiedente",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lunedì",
+          "09:00–10:00",
+          "Sala Lumo",
+          "Gruppo Vela",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "11:00–12:30",
+          "Sala Nubi",
+          "Gruppo Brina",
+          "12",
+          "Confermata"
+        ],
+        [
+          "Martedì",
+          "10:00–11:00",
+          "Sala Lumo",
+          "Gruppo Quarzo",
+          "6",
+          "Da verificare"
+        ],
+        [
+          "Mercoledì",
+          "14:00–15:30",
+          "Sala Vela",
+          "Gruppo Smeraldo",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "09:30–10:30",
+          "Sala Nubi",
+          "Gruppo Rugiada",
+          "5",
+          "Da verificare"
+        ],
+        [
+          "Venerdì",
+          "13:00–14:00",
+          "Sala Lumo",
+          "Gruppo Prisma",
+          "7",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "calendario",
+      "title": "Calendario settimanale",
+      "description": "Consulta le fasce prenotate e filtra il calendario per sala, giorno o stato.",
+      "metrics": [
+        {
+          "label": "Settimana",
+          "value": "10–14 giugno"
+        },
+        {
+          "label": "Sale in uso",
+          "value": "5"
+        },
+        {
+          "label": "Fasce libere",
+          "value": "21"
+        }
+      ],
+      "columns": [
+        "Giorno",
+        "Orario",
+        "Sala",
+        "Gruppo richiedente",
+        "Oggetto riunione",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lunedì",
+          "09:00–10:00",
+          "Sala Lumo",
+          "Gruppo Vela",
+          "Pianificazione attività",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "11:00–12:30",
+          "Sala Nubi",
+          "Gruppo Brina",
+          "Revisione progetto",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "15:00–16:00",
+          "Sala Vela",
+          "Gruppo Quarzo",
+          "Incontro operativo",
+          "Confermata"
+        ],
+        [
+          "Martedì",
+          "09:00–10:00",
+          "Sala Smeraldo",
+          "Gruppo Rugiada",
+          "Coordinamento",
+          "Confermata"
+        ],
+        [
+          "Martedì",
+          "10:00–11:00",
+          "Sala Lumo",
+          "Gruppo Quarzo",
+          "Verifica materiali",
+          "Da verificare"
+        ],
+        [
+          "Martedì",
+          "14:00–15:30",
+          "Sala Nubi",
+          "Gruppo Prisma",
+          "Laboratorio interno",
+          "Confermata"
+        ],
+        [
+          "Mercoledì",
+          "09:30–10:30",
+          "Sala Vela",
+          "Gruppo Brina",
+          "Riunione periodica",
+          "Confermata"
+        ],
+        [
+          "Mercoledì",
+          "14:00–15:30",
+          "Sala Smeraldo",
+          "Gruppo Smeraldo",
+          "Piano settimanale",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "09:30–10:30",
+          "Sala Nubi",
+          "Gruppo Rugiada",
+          "Confronto operativo",
+          "Da verificare"
+        ],
+        [
+          "Giovedì",
+          "11:00–12:00",
+          "Sala Lumo",
+          "Gruppo Vela",
+          "Aggiornamento attività",
+          "Confermata"
+        ],
+        [
+          "Venerdì",
+          "10:00–11:00",
+          "Sala Vela",
+          "Gruppo Prisma",
+          "Chiusura settimana",
+          "Confermata"
+        ],
+        [
+          "Venerdì",
+          "13:00–14:00",
+          "Sala Lumo",
+          "Gruppo Prisma",
+          "Riepilogo interno",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prenotazioni",
+      "title": "Elenco prenotazioni",
+      "description": "Cerca e filtra le prenotazioni registrate; seleziona una riga per consultarne i dettagli.",
+      "metrics": [
+        {
+          "label": "Prenotazioni totali",
+          "value": "18"
+        },
+        {
+          "label": "Confermate",
+          "value": "16"
+        },
+        {
+          "label": "Da verificare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Codice prenotazione",
+        "Data",
+        "Orario",
+        "Sala",
+        "Gruppo richiedente",
+        "Partecipanti",
+        "Oggetto",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "PR-401",
+          "10 giugno",
+          "09:00–10:00",
+          "Sala Lumo",
+          "Gruppo Vela",
+          "8",
+          "Pianificazione attività",
+          "Confermata"
+        ],
+        [
+          "PR-402",
+          "10 giugno",
+          "11:00–12:30",
+          "Sala Nubi",
+          "Gruppo Brina",
+          "12",
+          "Revisione progetto",
+          "Confermata"
+        ],
+        [
+          "PR-403",
+          "10 giugno",
+          "15:00–16:00",
+          "Sala Vela",
+          "Gruppo Quarzo",
+          "6",
+          "Incontro operativo",
+          "Confermata"
+        ],
+        [
+          "PR-404",
+          "11 giugno",
+          "09:00–10:00",
+          "Sala Smeraldo",
+          "Gruppo Rugiada",
+          "5",
+          "Coordinamento",
+          "Confermata"
+        ],
+        [
+          "PR-405",
+          "11 giugno",
+          "10:00–11:00",
+          "Sala Lumo",
+          "Gruppo Quarzo",
+          "6",
+          "Verifica materiali",
+          "Da verificare"
+        ],
+        [
+          "PR-406",
+          "11 giugno",
+          "14:00–15:30",
+          "Sala Nubi",
+          "Gruppo Prisma",
+          "9",
+          "Laboratorio interno",
+          "Confermata"
+        ],
+        [
+          "PR-407",
+          "12 giugno",
+          "09:30–10:30",
+          "Sala Vela",
+          "Gruppo Brina",
+          "7",
+          "Riunione periodica",
+          "Confermata"
+        ],
+        [
+          "PR-408",
+          "12 giugno",
+          "14:00–15:30",
+          "Sala Smeraldo",
+          "Gruppo Smeraldo",
+          "10",
+          "Piano settimanale",
+          "Confermata"
+        ],
+        [
+          "PR-409",
+          "13 giugno",
+          "09:30–10:30",
+          "Sala Nubi",
+          "Gruppo Rugiada",
+          "5",
+          "Confronto operativo",
+          "Da verificare"
+        ],
+        [
+          "PR-410",
+          "13 giugno",
+          "11:00–12:00",
+          "Sala Lumo",
+          "Gruppo Vela",
+          "8",
+          "Aggiornamento attività",
+          "Confermata"
+        ],
+        [
+          "PR-411",
+          "14 giugno",
+          "10:00–11:00",
+          "Sala Vela",
+          "Gruppo Prisma",
+          "7",
+          "Chiusura settimana",
+          "Confermata"
+        ],
+        [
+          "PR-412",
+          "14 giugno",
+          "13:00–14:00",
+          "Sala Lumo",
+          "Gruppo Prisma",
+          "7",
+          "Riepilogo interno",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-prenotazione",
+      "title": "Nuova prenotazione",
+      "description": "Registra una richiesta di utilizzo di una sala. Verifica prima la disponibilità nel calendario settimanale.",
+      "metrics": [],
+      "columns": [
+        "Data",
+        "Orario",
+        "Sala",
+        "Gruppo richiedente",
+        "Partecipanti",
+        "Oggetto"
+      ],
+      "rows": [],
+      "form": [
+        "Data",
+        "Orario",
+        "Sala",
+        "Gruppo richiedente",
+        "Partecipanti",
+        "Oggetto"
+      ]
+    }
+  ]
+}
